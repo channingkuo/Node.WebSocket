@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Node WebSocket</title>
+    <meta charset=utf-8>
+</head>
+
+<body>
+    <script>
+        var socket = new WebSocket("ws://127.0.0.1:8080");
+        document.write("Clinet is running...");
+        socket.onmessage = function (event) {
+            document.write("recving data");
+        };
+        socket.onopen = function (event) {
+            alert("websocket is open");
+        };
+        socket.onerror = function (event) {
+            document.write("websocket create failed");
+        };
+
+        window.onbeforeunload = function () {
+            socket.send("Client is Leaving");
+            return "Are you sure";
+        };
+
+    </script>
+</body>
+
+</html>

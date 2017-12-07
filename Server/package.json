@@ -1,0 +1,26 @@
+{
+  "name": "node.websocket",
+  "version": "1.0.0",
+  "description": "Node Socket Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ellusioists/Node.WebSocket.git"
+  },
+  "keywords": [
+    "Node",
+    "WebSocket"
+  ],
+  "author": "Channing Kuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ellusioists/Node.WebSocket/issues"
+  },
+  "homepage": "https://github.com/Ellusioists/Node.WebSocket#readme",
+  "dependencies": {
+    "ws": "^3.3.2"
+  }
+}
